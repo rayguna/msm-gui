@@ -8,6 +8,8 @@ Git commit: https://github.com/demostudent24/msm-gui/commits/main
 
 Lesson: https://learn.firstdraft.com/lessons/129
 
+Grading info: https://grades.firstdraft.com/resources/eeef6b17-b251-4945-9d12-89414d90e56d
+
 <hr>
 
 Notes
