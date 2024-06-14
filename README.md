@@ -4,6 +4,10 @@ Target: https://msm-gui.matchthetarget.com/
 
 Lesson: https://learn.firstdraft.com/lessons/129
 
+Lesson on forms: https://learn.firstdraft.com/lessons/102-query-strings-and-forms
+
+Lesson on queries: https://learn.firstdraft.com/lessons/126-msm-queries
+
 <hr>
 
 Notes
