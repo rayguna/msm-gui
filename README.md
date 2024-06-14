@@ -2,11 +2,11 @@
 
 Target: https://msm-gui.matchthetarget.com/
 
+Video: https://share.descript.com/view/aGvwjU9hVXx
+
+Git commit: https://github.com/demostudent24/msm-gui/commits/main
+
 Lesson: https://learn.firstdraft.com/lessons/129
-
-Lesson on forms: https://learn.firstdraft.com/lessons/102-query-strings-and-forms
-
-Lesson on queries: https://learn.firstdraft.com/lessons/126-msm-queries
 
 <hr>
 
