@@ -1,4 +1,15 @@
 class DirectorsController < ApplicationController
+  def destroy
+    the_id = params.fetch("an_id")
+    matching_records = Director.all.where({:id => the_id})
+
+    the_director = matching_records.at(0)
+
+    the_director.destroy
+
+    redirect_to("/directors")
+  end
+  
   def create
     d = Director.new
     d.name = params.fetch("query_name")
