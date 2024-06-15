@@ -27,3 +27,17 @@ Notes
 6. You may review the current dataset by going to https://cautious-bassoon-w9rpxpqg49xf5495-3000.app.github.dev/rails/db
 7. To destroy the useless data containing value 1 through 6, type inthe debug console a_movie.destroy. You can then check the data in the table by visiting the .../rails/db dataset.
 8. To reinitialize the data in the table, type rake sample_data.
+9. (18 min) Add an if-else statement to the app/controllers/views/movie_templates/index/html.erb file as follows:
+```
+<td>
+  <% matching_directors = Director.all.where({ :id => a_movie.director_id }) %>
+  
+  <% the_director = matching_directors.at(0) %>
+
+  <% if the_director == nil %>
+    Uh oh! We weren't able to find a director for this movie.
+  <%else%>
+    <%=the_director.name%>
+  <%end%>
+</td>
+```
