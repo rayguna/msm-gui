@@ -42,3 +42,6 @@ Notes
 </td>
 ```
 10. (21 min) Added delete button for movies.
+
+11. (23 min) After creating the add form, next create an edit form. NOte that the form action is different for edit form.
+12. (30 min)
