@@ -41,3 +41,4 @@ Notes
   <%end%>
 </td>
 ```
+10. (21 min) Added delete button for movies.
