@@ -23,5 +23,7 @@ Rails.application.routes.draw do
 
   post("/insert_actor", {:controller=> "actors", :action => "create"})
 
+  get("/delete_actor/:an_id", {:controller=> "actors", :action => "destroy"})
+
   get("/actors/:path_id", { :controller => "actors", :action => "show" })
 end

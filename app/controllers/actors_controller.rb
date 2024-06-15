@@ -1,4 +1,15 @@
 class ActorsController < ApplicationController
+  def destroy
+    the_id = params.fetch("an_id")
+    matching_records = Actor.all.where({:id => the_id})
+
+    the_actor = matching_records.at(0)
+
+    the_actor.destroy
+
+    redirect_to("/actors")
+  end
+
   def create
     a = Actor.new
     a.name = params.fetch("query_name")
