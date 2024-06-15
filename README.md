@@ -15,4 +15,15 @@ Grading info: https://grades.firstdraft.com/resources/eeef6b17-b251-4945-9d12-89
 Notes
 
 1. Populate tables with data using the command `rake sample_data`.
-2. You can view the populatd table here: https://cautious-bassoon-w9rpxpqg49xf5495-3000.app.github.dev/rails/db.
+2. You can view the populated table here: https://cautious-bassoon-w9rpxpqg49xf5495-3000.app.github.dev/rails/db.
+3. Create forms for directors, movies, and actors routes. Set the route for the form. 
+4. Set the route within config/routes.rb, as follows.
+
+```
+  post("/insert_movie_record", {:controller=> "movies", :action => "create"})
+```
+
+5. (7 min) Accordingly add the create method within `app/controllers/movies_controller.rb`. (12 min) - destroy useless data from database
+6. You may review the current dataset by going to https://cautious-bassoon-w9rpxpqg49xf5495-3000.app.github.dev/rails/db
+7. To destroy the useless data containing value 1 through 6, type inthe debug console a_movie.destroy. You can then check the data in the table by visiting the .../rails/db dataset.
+8. To reinitialize the data in the table, type rake sample_data.
