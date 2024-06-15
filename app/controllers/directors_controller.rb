@@ -1,4 +1,26 @@
 class DirectorsController < ApplicationController
+  def update
+    
+    #Get the ID out of params
+    d_id= params.fetch("an_id")
+
+    #look up the existing record
+    matching_records = Director.all.where({:id => d_id})
+    the_director = matching_records.at(0)
+
+    #Overwrite each column with the values from user inputs.
+    the_director.name=params.fetch("query_name")
+
+    the_director.dob = params.fetch("query_dob")
+    the_director.bio = params.fetch("query_bio")
+    the_director.image = params.fetch("query_image")
+
+    #save  
+    the_director.save
+
+    redirect_to("/directors/#{the_director.id}", allow_other_host: true)
+  end  
+  
   def destroy
     the_id = params.fetch("an_id")
     matching_records = Director.all.where({:id => the_id})
