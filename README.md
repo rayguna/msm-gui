@@ -45,3 +45,28 @@ Notes
 
 11. (23 min) After creating the add form, next create an edit form. NOte that the form action is different for edit form.
 12. (30 min)
+13. For the update button, the method redirect uses curly brackets rather than angled brackets:
+
+```
+  def update
+    
+    #Get the ID out of params
+    ma_id= params.fetch("an_id")
+
+    #look up the existing record
+    matching_records = Actor.all.where({:id => a_id})
+    the_actor = matching_records.at(0)
+
+    #Overwrite each column with the values from user inputs.
+    the_actor.name=params.fetch("query_name")
+
+    the_actor.dob = params.fetch("query_dob")
+    the_actor.bio_box = params.fetch("query_bio")
+    the_actor.image = params.fetch("query_image")
+
+    #save  
+    the_actor.save
+
+    redirect_to("/actors/#{the_actor.id}", allow_other_host: true)
+  end
+```
